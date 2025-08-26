@@ -9,84 +9,87 @@ Dans cet exercice, vous devez identifier si la commande donnée est un alias, un
 1. ps
     <Type>     
     <Réponse>  
+    cmdlet = Get-Process
+    commande externe Mircosoft.Powershell.Management
 
 2. shcm
     <Type>     
     <Réponse>  
-
+    cmdlet = Show-Command
+    commande externe, Mircosoft.Powershell.Utility
 3. Get-ChildItem
-    <Type>     
-    <Réponse>  
+    <Type>     cmdlet
+    <Réponse>  dir, gci, ls
 
 4. pwd
-    <Type>     
-    <Réponse>  
+    <Type>     cmdlet
+    <Réponse>  Get-Location
 
 5. Set-Location
-    <Type>     
-    <Réponse>  
+    <Type>     cmdlet
+    <Réponse>  cd, chdir, sl 
 
 6. copy
-    <Type>     
-    <Réponse>  
+    <Type>     interne
+    <Réponse>  Copy-Item
 
 7. ping
-    <Type>     
-    <Réponse>  
+    <Type>     externe
+    <Réponse>  ping.exe, C:\Windows\System32
 
 8. Get-PSDrive
-    <Type>     
-    <Réponse>  
+    <Type>     interne
+    <Réponse>  gdr
 
 9. ni
-    <Type>     
-    <Réponse>  
+    <Type>     interne
+    <Réponse>  New-Item
 
 10. Write-Output
-    <Type>     
-    <Réponse>  
+    <Type>     interne
+    <Réponse>  echo, Write
 
 11. gsv
-    <Type>     
-    <Réponse>  
+    <Type>     interne
+    <Réponse>  Get-Service
 
 12. Remove-Item
-    <Type>     
-    <Réponse>  
+    <Type>     interne
+    <Réponse>  del, erase, rd, ri, rm, rmdir
 
 13. ren
-    <Type>     
-    <Réponse>  
+    <Type>     interne
+    <Réponse>  Rename-Item
 
 14. ipconfig
-    <Type>     
-    <Réponse>  
+    <Type>     externe, C:\Windows\System32
+    <Réponse>  ipconfig.exe
 
 15. wget
-    <Type>     
-    <Réponse>  
+    <Type>     interne
+    <Réponse>  Invoke-WebRequest
 
 16. Move-Item
-    <Type>     
-    <Réponse>  
+    <Type>     interne
+    <Réponse>  mi, move, mv
 
 17. cat
-    <Type>     
-    <Réponse>  
+    <Type>     interne
+    <Réponse>  Get-Content
 
 18. Start-Process
-    <Type>     
-    <Réponse>  
+    <Type>     interne
+    <Réponse>  start, saps
 
 19. kill
-    <Type>     
-    <Réponse>  
+    <Type>     interne
+    <Réponse>  Stop-Process
 
 20. taskkill
-    <Type>     
-    <Réponse>  
+    <Type>     externe
+    <Réponse>  C:\Windows\System32\taskkill.exe
 
 21. Invoke-History
-    <Type>     
-    <Réponse>  
+    <Type>     interne
+    <Réponse>  r, ihy
 
