@@ -7,7 +7,7 @@
 
 
 # 1. Obtenir la liste des fichiers et répertoires contenus dans le répertoir courant (équivalent à dir).
-
+Get-ChildItem
 
 # 2. Obtenir la liste des fichiers seulement contenus directement sous C:\Windows.
 
