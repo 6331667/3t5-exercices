@@ -11,49 +11,49 @@ Pour ce faire, analysez l'objet résultant de chaque maillon à l'aide des comma
         - Description: Le mot "spooler", qui est le nom du service recherché
 
     - Get-Service
-        - Type de l'objet en sortie: 
-        - Description: 
+        - Type de l'objet en sortie: ServiceController
+        - Description: rammase les informations l'objet spooler qui est un service
 
     - Select-Object
-        - Type de l'objet en sortie: 
-        - Description: 
+        - Type de l'objet en sortie: ServiceProcess
+        - Description: Affiche les informatins du objet avec plus de prescision
 
     - Format-List
-        - Type de l'objet en sortie: 
-        - Description: 
+        - Type de l'objet en sortie: commands.internal.format.ForamtStartData
+        - Description: prend le contenu d l'objet dans le pipeline et le format en liste
 
     - Out-File
-        - Type de l'objet en sortie: 
-        - Description: 
+        - Type de l'objet en sortie: String
+        - Description: Prend l'objet et met le contenu de l'objet dans un fichier text
 
 
 
 2. Get-Item C:\Windows\System32\drivers\etc\hosts | Get-Content | Out-Null
 
     - Get-Item
-        - Type de l'objet en sortie: 
-        - Description: 
+        - Type de l'objet en sortie: FileInfo
+        - Description: Les prorietés du fichier hosts
 
    - Get-Content
-        - Type de l'objet en sortie: 
-        - Description: 
+        - Type de l'objet en sortie: String
+        - Description: Affiche le contenu dans le fichier hosts
 
     - Out-Null
-        - Type de l'objet en sortie: 
-        - Description: 
+        - Type de l'objet en sortie: Null
+        - Description: Fait que l'objet ne tombe pas dans le pipeline, donc pas de sortie de l'objet precedent
 
 
 
 3. Get-LocalGroup -Name Administrateurs | Get-LocalGroupMember | Select-Object -Property Name, SID | Out-GridView
 
     - Get-LocalGroup
-        - Type de l'objet en sortie: 
-        - Description: 
+        - Type de l'objet en sortie: commands.LocalGroup
+        - Description: Affiche les informations du grope recherché
 
     - Get-LocalGroupMember
-        - Type de l'objet en sortie: 
-        - Description: 
+        - Type de l'objet en sortie: Commands.LocalPrincipal
+        - Description: Affiche tout les utilisateurs du grope recherché
 
     - Select-Object
-        - Type de l'objet en sortie: 
-        - Description: 
+        - Type de l'objet en sortie: Commands.LocalPrincipal
+        - Description: Affiche des details plus precis des utilisatuers du groupe
