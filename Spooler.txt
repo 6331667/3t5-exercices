@@ -1,0 +1,23 @@
+
+UserName            : LocalSystem
+Description         : Ce service met en spoule les travaux d’impression et gère l’interaction avec l’imprimante.  Si vous arrêtez ce service, vous ne pourrez plus imprimer ni voir vos imprimantes.
+DelayedAutoStart    : False
+BinaryPathName      : C:\WINDOWS\System32\spoolsv.exe
+StartupType         : Automatic
+Name                : spooler
+RequiredServices    : {RPCSS, HTTP}
+CanPauseAndContinue : False
+CanShutdown         : False
+CanStop             : True
+DisplayName         : Spouleur d’impression
+DependentServices   : {}
+MachineName         : .
+ServiceName         : spooler
+ServicesDependedOn  : {RPCSS, HTTP}
+StartType           : Automatic
+ServiceHandle       : 
+Status              : Running
+ServiceType         : Win32OwnProcess, InteractiveProcess
+Site                : 
+Container           : 
+
