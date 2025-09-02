@@ -30,13 +30,13 @@ Get-ComputerInfo | Out-File info.txt
 # 5. Créez un nouveau répertoire nommé Minou dans le répertoire courant, puis utilisez le pipeline pour entrer dans ce 
 #    répertoire immédiatement après en une seule ligne de commande.
 
-
+ Set-Location -Path (New-Item Minou -ItemType Directory)
 
 # 6. Démarrez Notepad à l'aide de la commande Start-Process, mais faites-le en affichant son numéro de processus (PID) 
 #    dans la console. N'affichez que son numéro de processus, rien d'autre, sans l'en-tête de colonne "PID". (*Attention, 
 #    cette commande ne produit pas d'objet de manière automatique, il faut le provoquer*).
 
-
+Start-Process notepad.exe -PassThru | select -ExpandProperty Id
 
 # 7. 🏆 Obtenez la liste de toutes les adresses IPv4 de votre ordinateur. On souhaite avoir les informations détaillées 
 #    enregistrées dans un fichier texte, tout en affichant un tableau sommaire dans la console avec seulement une 
@@ -44,4 +44,4 @@ Get-ComputerInfo | Out-File info.txt
 #    utilisant le pipeline. Pour répondre à cette question, vous aurez besoin, entre autres, des commandes 
 #    Get-NetIPAddress et Tee-Object.
 
-
+ Get-NetIPAddress -AddressFamily IPv4 | Tee-Object -FilePath ip.txt |select -Property InterfaceAlias,IPAddress
