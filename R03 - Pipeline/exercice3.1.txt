@@ -1,0 +1,59 @@
+# Exercice 1: Analyse du pipeline
+
+Pour chacune des lignes de commandes suivantes, décrivez l'objet produit par chaque commande de la chaîne. 
+Pour ce faire, analysez l'objet résultant de chaque maillon à l'aide des commandes Get-Member ou Select-Object.
+
+
+1. "Spooler" | Get-Service | Select-Object * | Format-List | Out-File Spooler.txt
+
+    - "Spooler" (exemple)
+        - Type de l'objet en sortie: String
+        - Description: Le mot "spooler", qui est le nom du service recherché
+
+    - Get-Service
+        - Type de l'objet en sortie: 
+        - Description: 
+
+    - Select-Object
+        - Type de l'objet en sortie: 
+        - Description: 
+
+    - Format-List
+        - Type de l'objet en sortie: 
+        - Description: 
+
+    - Out-File
+        - Type de l'objet en sortie: 
+        - Description: 
+
+
+
+2. Get-Item C:\Windows\System32\drivers\etc\hosts | Get-Content | Out-Null
+
+    - Get-Item
+        - Type de l'objet en sortie: 
+        - Description: 
+
+   - Get-Content
+        - Type de l'objet en sortie: 
+        - Description: 
+
+    - Out-Null
+        - Type de l'objet en sortie: 
+        - Description: 
+
+
+
+3. Get-LocalGroup -Name Administrateurs | Get-LocalGroupMember | Select-Object -Property Name, SID | Out-GridView
+
+    - Get-LocalGroup
+        - Type de l'objet en sortie: 
+        - Description: 
+
+    - Get-LocalGroupMember
+        - Type de l'objet en sortie: 
+        - Description: 
+
+    - Select-Object
+        - Type de l'objet en sortie: 
+        - Description: 
