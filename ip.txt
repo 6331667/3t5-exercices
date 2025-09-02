@@ -1,0 +1,127 @@
+
+IPAddress         : 172.26.16.1
+InterfaceIndex    : 16
+InterfaceAlias    : vEthernet (Default Switch)
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 20
+PrefixOrigin      : Manual
+SuffixOrigin      : Manual
+AddressState      : Preferred
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 192.168.220.2
+InterfaceIndex    : 12
+InterfaceAlias    : VMware Network Adapter VMnet8
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 24
+PrefixOrigin      : Manual
+SuffixOrigin      : Manual
+AddressState      : Preferred
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 192.168.221.1
+InterfaceIndex    : 13
+InterfaceAlias    : VMware Network Adapter VMnet1
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 24
+PrefixOrigin      : Manual
+SuffixOrigin      : Manual
+AddressState      : Preferred
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 10.10.49.18
+InterfaceIndex    : 3
+InterfaceAlias    : Ethernet (CÉGEP)
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 24
+PrefixOrigin      : Dhcp
+SuffixOrigin      : Dhcp
+AddressState      : Preferred
+ValidLifetime     : 21:25:17
+PreferredLifetime : 21:25:17
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 169.254.190.213
+InterfaceIndex    : 8
+InterfaceAlias    : Ethernet (22M1)
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 16
+PrefixOrigin      : WellKnown
+SuffixOrigin      : Link
+AddressState      : Tentative
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 169.254.255.173
+InterfaceIndex    : 11
+InterfaceAlias    : Connexion au réseau local 2
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 16
+PrefixOrigin      : WellKnown
+SuffixOrigin      : Link
+AddressState      : Tentative
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 169.254.170.90
+InterfaceIndex    : 5
+InterfaceAlias    : Connexion au réseau local
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 16
+PrefixOrigin      : WellKnown
+SuffixOrigin      : Link
+AddressState      : Tentative
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 169.254.250.20
+InterfaceIndex    : 14
+InterfaceAlias    : Ethernet (22M2)
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 16
+PrefixOrigin      : WellKnown
+SuffixOrigin      : Link
+AddressState      : Preferred
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 127.0.0.1
+InterfaceIndex    : 1
+InterfaceAlias    : Loopback Pseudo-Interface 1
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 8
+PrefixOrigin      : WellKnown
+SuffixOrigin      : WellKnown
+AddressState      : Preferred
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
