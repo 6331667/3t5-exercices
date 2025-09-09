@@ -10,7 +10,7 @@
 #         tableau montrant le nom du fichier en majuscules ainsi que la taille approximative 
 #         en kilooctets, arrondi à l'entier près.
 
-gci -Path C:\Windows -File |  select {(($_.Name).ToUpper()), ([math]::Round($_.Length))} |ft
+gci -Path C:\Windows -File |  select -Property Name, @{Expression ={($_.Name).ToUpper()} }, Length, @{Expression= {([math]::Round($_.Length))}}| ft 
 
 # 4.3.3. 🏆🏆 À partir de votre ligne de commande à la question 4.2.3, créez un fichier nommé 
 #        "Service_nomduservice.txt" pour chaque service dans le répertoire courant. Chaque 
