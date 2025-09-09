@@ -1,7 +1,7 @@
 #### 5.1.1
 # Obtenir la liste de tous les chemins contenus dans la variable d'environnement
 #     PATH, sous forme de tableau de strings.
-
+$env:Path -split ';' | ft
 
 
 #### 5.1.2
@@ -9,13 +9,13 @@
 #     qu'elle devienne C:/Windows/System32 en utilisant une méthode de
 #     remplacement (replace).
 
-
+$str.Replace('\', '/')
 
 #### 5.1.3
 # En utilisant les solutions précédentes, inversez le sens des barres obliques 
 #     pour tous les chemins de la variable PATH.
 
-
+$env:Path.Replace('\', '/') -split ";" | ft
 
 #### 5.1.4
 # En utilisant la variable suivante, trouver la ligne de commande qui donne le
@@ -36,14 +36,14 @@ $montexte = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "      + `
     "inceptos himenaeos. Nam turpis tortor, eleifend ut tristique "          + `
     "vel, eleifend ut neque."
 
-
+$montexte.Length
 
 
 #### 5.1.5
 # En utilisant le texte précédente, trouver la ligne de commande qui donne le 
 #     nombre de phrases.
 
-
+$montexte.Split('.')| Measure-Object -Line
 
 
 #### 5.1.6
@@ -54,12 +54,12 @@ $montexte = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "      + `
 # Note: Un code postal canadien est constitué ainsi: 
 #      [lettre] [chiffre] [lettre] [espace] [chiffre] [lettre] [chiffre].
 
-
-
+$postal -match "^\w\d\w\s\d\w\d"
 
 #### 5.1.7
 # En utilisant une expression régulière, trouvez une ligne de commande qui 
 #     retourne tous les chemins de la variable PATH qui se terminent par un "\".
 
+($env:Path -split ';') -match "\\$"
 
 
