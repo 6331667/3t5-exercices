@@ -4,12 +4,9 @@
         [string]$Chemin
     )
     if ($null -eq $Chemin) {
-        notepad.exe
+        Start-Process Notepad.exe -PassThru | Get-Process
     }
     else {
-        notepad.exe $Chemin
+        Start-Process Notepad.exe -ArgumentList $Chemin -PassThru | Get-Process
     }
-
-    return Get-Process -Name Notepad
-    
 }
