@@ -1,5 +1,4 @@
 param (
-    [Parameter(Mandatory)]
     [ValidateCount(1,6)]
     [string[]] $Name
 )
